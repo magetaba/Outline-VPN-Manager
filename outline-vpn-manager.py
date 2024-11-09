@@ -251,7 +251,7 @@ def check_and_update_expired_keys():
             # Send request to set data limit
             response = requests.put(url, headers=HEADERS, json=payload, verify=False)
 
-            if response.status_code == 200:
+            if response.status_code == 204:
                 logging.info(f"Data limit set for expired key (ID: {identifier}, Expire Date: {expire_date})")
             else:
                 logging.error(f"Failed to set data limit for key {identifier}. Status code: {response.status_code}")
