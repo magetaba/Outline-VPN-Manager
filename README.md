@@ -1,6 +1,6 @@
 # Outline VPN Manager
 
-**Outline VPN Manager** is a Python3 script that simplifies the management of users and access URLs for an Outline VPN server. With this tool, you can create, retrieve, and manage access URLs, set expiration dates for users, and automate maintenance tasks with cron jobs, all through a command-line interface.
+**Outline VPN Manager** is a Python3 script that simplifies the management of users and access URLs for an Outline VPN server. With this tool, you can create, retrieve, and manage access URLs, set expiration dates for users, and automate expiration check with cronjob, all through a command-line interface.
 
 ## Data Encryption with Yopass
 This script uses the [Yopass](https://yopass.se) API to enhance security by encrypting access URLs. Yopass provides secure, one-time download URLs, so the encrypted data can be accessed only once, reducing the risk of unauthorized access. This approach ensures that your sensitive information is protected during transmission and access.
